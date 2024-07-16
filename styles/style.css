@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    color: #3A3A3A;
+  }
+  .btn-primary{
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 41px;
+    border: none;
+    color: white;
+    font-weight: 700;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .header{
+   padding: 10px 50px;
+  }
+  .navbar, .banner-container{
+    justify-content: space-between; 
+    align-items: center;
+  }
+  .brand-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .navbar > ul{
+    list-style: none;
+  } 
+  .navbar >ul >li{
+    margin-right: 30px;
+  }
+  .banner-content{
+    max-width: 582px;
+  }
+  .banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .banner-description{
+    font-weight: 500;
+  }
+  .banner-image{
+    background: url(../images/Circle\ design.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .banner-image img{
+    width: 100%;
+  }
+
+  /* responsive media styles for mobile */
+  @media screen and (max-width: 576px) {
+    .header{
+        padding: 10px;
+    }
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+  }
